@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>jQuery Scrolling Sideboxes for Zen Cart&reg;</title>
+
+<style type="text/css">
+<!--
+a, a:active, a:visited { color: #006666; text-decoration: none; }
+a:hover { color:#00CC99; text-decoration: underline; }
+body, p, h1, h2, h3, h4, h5, h6, li, td, dd, dt { font-family: Verdana, AvantGarde, Tahoma, Arial, sans-serif; font-size: 10pt; color: black; padding: 0px; margin: 20px; }
+pre { margin: 20px; }
+H1, H2, H3, H4 { font-weight: bold }
+h1 { font-size: 20px; }
+h2 { font-size: 16px; }
+ol li, ul li { margin: 5px 0; }
+.corefile, .impt { color: red; }
+img { margin-left: 20px; max-width: 95%; }
+-->
+</style>
+</head>
+
+<body>
+<h1>jQuery Scrolling Sideboxes &mdash;  for Zen Cart v1.5.0, v1.5.1, v1.5.2 and v1.5.3</h1>
+<h3>Version 1.0.0</h3>
+<p>Current Support Thread at Zen Cart Forums: <a href="http://www.zen-cart.com/showthread.php?214591" target="_blank">http://www.zen-cart.com/showthread.php?214591</a></p>
+
+<hr />
+<h2>What it does</h2>
+<p>This plugin provides three (3) additional sideboxes to your store's configuration:</p>
+<ol>
+  <li>sideboxes/featured_scrolling.php</li>
+  <li>sideboxes/specials_scrolling.php</li>
+  <li>sideboxes/whats_new_scrolling.php</li>
+</ol>
+<p>In each case, the sidebox is <em>heavily</em> modelled after the built-in Zen Cart sidebox of a similar name with one difference: each sidebox uses some jQuery to show one product at a time in the sidebox, cutting down on the screen &quot;real-estate&quot; required.</p>
+
+<hr />
+<h2>Installation</h2>
+<p>This plugin currently has no <span class="corefile">core-file overwrites</span>; you should <strong>always</strong> backup your cart's database and files prior to making any changes.</p>
+<ol>
+  <li>Unzip the plugin's package file, which you've most likely already done if you're reading this!</li>
+  <li>Copy the plugin's files to your store's file system.<ol>
+    <li>/includes/languages/english/extra_definitions/scrolling_sideboxes.php</li>
+    <li>/includes/modules/sideboxes/featured_scrolling.php</li>
+    <li>/includes/modules/sideboxes/specials_scrolling.php</li>
+    <li>/includes/modules/sideboxes/whats_new_scrolling.php</li>
+    <li>/includes/templates/template_default/jscript/jscript_jquery_cdn.js</li>
+    <li>/includes/templates/template_default/jscript/jscript_sidebox_slider.js</li>
+    <li>/includes/templates/template_default/sideboxes/tpl_featured_scrolling.php</li>
+    <li>/includes/templates/template_default/sideboxes/tpl_specials_scrolling.php</li>
+    <li>/includes/templates/template_default/sideboxes/tpl_whats_new_scrolling.php</li>
+  </ol></li>
+  <li><strong>Note:</strong> If your store is already loading a version of jQuery, you can simply rename the file jscript_jquery_cdn.js to jscript_jquery_cdn.js~ so it does not load.</li>
+</ol>
+
+<hr />
+<h2>Version History</h2>
+<ul>
+  <li>v1.0.0, 2014-09-13 (lat9): Initial release.</li>
+</ul>
+
+</body>
+</html>
