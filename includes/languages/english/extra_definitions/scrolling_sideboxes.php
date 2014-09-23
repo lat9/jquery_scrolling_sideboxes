@@ -7,3 +7,4 @@
 define ('BOX_HEADING_WHATS_NEW_SCROLLING', "What's New");
 define ('BOX_HEADING_FEATURED_SCROLLING', 'Featured');
 define ('BOX_HEADING_SPECIALS_SCROLLING', 'Specials');
+define ('BOX_HEADING_BESTSELLERS_SCROLLING', 'Best Sellers');
