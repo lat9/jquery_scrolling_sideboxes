@@ -21,8 +21,8 @@ img { margin-left: 20px; max-width: 95%; }
 </head>
 
 <body>
-<h1>jQuery Scrolling Sideboxes &mdash;  for Zen Cart v1.5.0, v1.5.1, v1.5.2 and v1.5.3</h1>
-<h3>Version 1.1.0</h3>
+<h1>jQuery Scrolling Sideboxes &mdash;  for Zen Cart v1.5.5 and later</h1>
+<h3>Version 2.0.0, by lat9</h3>
 <p>Current Support Thread at Zen Cart Forums: <a href="http://www.zen-cart.com/showthread.php?214591" target="_blank">http://www.zen-cart.com/showthread.php?214591</a></p>
 
 <hr />
@@ -35,13 +35,16 @@ img { margin-left: 20px; max-width: 95%; }
   <li>sideboxes/whats_new_scrolling.php</li>
 </ol>
 <p>In each case, the sidebox is <em>heavily</em> modelled after the built-in Zen Cart sidebox of a similar name with one difference: each sidebox uses some jQuery to show one product at a time in the sidebox, cutting down on the screen &quot;real-estate&quot; required.</p>
-
+<p><strong>Note:</strong> Starting with v2.0.0 of the plugin, your active template <em><b>must</b></em> load a version of jQuery for the plugin to properly operate!</p>
 <hr />
 <h2>Installation</h2>
 <p>This plugin currently has no <span class="corefile">core-file overwrites</span>; you should <strong>always</strong> backup your cart's database and files prior to making any changes.</p>
 <ol>
   <li>Unzip the plugin's package file, which you've most likely already done if you're reading this!</li>
-  <li>Copy the plugin's files to your store's file system.<ol>
+  <li>Copy the contents of the /includes/templates/YOUR_TEMPLATE/jscript directory to the like-named subdirectory for your store's active template:<ol>
+    <li>/includes/templates/YOUR_TEMPLATE/jscript/jscript_sidebox_slider.js</li>
+  </ol></li>
+  <li>Copy the plugin's <em>new</em>, default files to your store's file system.<ol>
     <li>/includes/languages/english/extra_definitions/scrolling_sideboxes.php</li>
     <li>/includes/modules/sideboxes/best_sellers_scrolling.php</li>
     <li>/includes/modules/sideboxes/featured_scrolling.php</li>
@@ -54,18 +57,23 @@ img { margin-left: 20px; max-width: 95%; }
     <li>/includes/templates/template_default/sideboxes/tpl_specials_scrolling.php</li>
     <li>/includes/templates/template_default/sideboxes/tpl_whats_new_scrolling.php</li>
   </ol></li>
-  <li><strong>Note:</strong> If your store is already loading a version of jQuery, you can simply rename the file jscript_jquery_cdn.js to jscript_jquery_cdn.js~ so it does not load.</li>
 </ol>
 
 <hr />
 <h2>Version History</h2>
 <ul>
-  <li>v1.0.0, 2014-09-13 (lat9): Initial release.</li>
+  <li>v2.0.0, 2017-07-xx (lat9)<ul>
+    <li>BUGFIX: Distribute jQuery handler for YOUR_TEMPLATE use.</li>
+    <li>The following files were added, changed or removed:<ol>
+      <li>/includes/templates/YOUR_TEMPLATE/jscript/jscript_sidebox_slider.js</li>
+    </ol></li>
+  </ul></li>
   <li>v1.1.0, 2014-09-23 (lat9): Added best_sellers_scrolling<ol>
     <li>/includes/languages/english/extra_definitions/scrolling_sideboxes.php</li>
     <li>/includes/modules/sideboxes/best_sellers_scrolling.php</li>
     <li>/includes/templates/template_default/sideboxes/tpl_best_sellers_scrolling.php</li>
   </ol></li>
+  <li>v1.0.0, 2014-09-13 (lat9): Initial release.</li>
 </ul>
 
 </body>
