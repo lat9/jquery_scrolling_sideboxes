@@ -16,6 +16,7 @@ h2 { font-size: 16px; }
 ol li, ul li { margin: 5px 0; }
 .corefile, .impt { color: red; }
 img { margin-left: 20px; max-width: 95%; }
+.removed { text-decoration: line-through; }
 -->
 </style>
 </head>
@@ -50,7 +51,6 @@ img { margin-left: 20px; max-width: 95%; }
     <li>/includes/modules/sideboxes/featured_scrolling.php</li>
     <li>/includes/modules/sideboxes/specials_scrolling.php</li>
     <li>/includes/modules/sideboxes/whats_new_scrolling.php</li>
-    <li>/includes/templates/template_default/jscript/jscript_jquery_cdn.js</li>
     <li>/includes/templates/template_default/jscript/jscript_sidebox_slider.js</li>
     <li>/includes/templates/template_default/sideboxes/tpl_best_sellers_scrolling.php</li>
     <li>/includes/templates/template_default/sideboxes/tpl_featured_scrolling.php</li>
@@ -63,10 +63,13 @@ img { margin-left: 20px; max-width: 95%; }
 <hr />
 <h2>Version History</h2>
 <ul>
-  <li>v2.0.0, 2017-07-xx (lat9)<ul>
+  <li>v2.0.0, 2017-07-23 (lat9)<ul>
     <li>BUGFIX: Distribute jQuery handler for YOUR_TEMPLATE use.</li>
-    <li>The following files were added, changed or removed:<ol>
+    <li>CHANGE: Remove the jQuery loader from this plugin; the store's active template is <em>assumed</em> to include a jQuery load as part of its processing.</li>
+    <li>CHANGE: Drop support for Zen Cart versions prior to 1.5.5.</li>
+    <li>The following files were added or <span class="removed">removed</span>:<ol>
       <li>/includes/templates/YOUR_TEMPLATE/jscript/jscript_sidebox_slider.js</li>
+      <li><span class="removed">/includes/templates/template_default/jscript_jquery_cdn.js</span></li>
     </ol></li>
   </ul></li>
   <li>v1.1.0, 2014-09-23 (lat9): Added best_sellers_scrolling<ol>
