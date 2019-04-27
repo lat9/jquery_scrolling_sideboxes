@@ -7,7 +7,7 @@
 // Copyright 2003 osCommerce
 // License: http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
 //
-if (!(isset($_GET['products_id'])) {
+if (!isset($_GET['products_id'])) {
     $scrolling_specials_sql = 
         "SELECT p.products_id, pd.products_name, p.products_image, p.master_categories_id
            FROM " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_SPECIALS . " s
